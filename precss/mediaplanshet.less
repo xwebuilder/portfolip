@@ -1,0 +1,79 @@
+// .media(@name, @value, @size) {
+//     @media(max-width: @size) {
+//         @{name}: @value;
+//     }
+// }
+// faqat bitta kod uchun ishlidi
+
+// 
+.media-block(@content, @size) {
+    @media(max-width: @size) {
+        @content();
+    }
+}
+
+// hamma kod uchun ishlidi;
+
+
+header {
+
+    img {
+        .media-block( {
+                width: 250px;
+                margin: auto;
+            }
+
+            , 576px);
+    }
+
+    .nav {
+        .media-block( {
+                // width: 200px;
+                // height: 50px;
+                margin: auto;
+                display: none;
+            }
+
+            , 576px);
+
+        .burger {
+            .media-block( {
+                    display: block;
+                }
+
+                , 576px);
+        }
+    }
+}
+
+.header_text {
+    .media-block( {
+            height: 25vh;
+            background: grey;
+        }
+
+        , 576px);
+
+
+
+    h2 {
+        .media-block( {
+                color: blue;
+                margin-top: 0px;
+            }
+
+            , 576px);
+
+        &:hover {
+            .media-block( {
+                    background-color: transparent;
+                }
+
+                , 576px);
+        }
+    }
+}
+
+
+
+// 

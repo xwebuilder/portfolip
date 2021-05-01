@@ -1,0 +1,106 @@
+// @import './header.less';
+// @import './sectionnew.less';
+// @import './news.less';
+// @import './security.less';
+// @import './footer.less';
+// 
+@import 'params/mix';
+/* mixen  */
+@import 'params/var';
+
+/* tezkor buyuruq */
+
+@import 'navmenu';
+@import 'section2';
+@import 'qobilat';
+// @import 'progress';
+@import 'contact';
+@import 'web';
+
+
+// @import 'mediaplanshet';
+// 
+// 
+* {
+    title {
+        color: aqua;
+        background-color: aquamarine;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    // min-height: 100vh;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+// 
+section:nth-child(even) {
+    background: url('../image/index2.jpg') no-repeat center / cover;
+}
+
+;
+
+// 
+section:nth-child(odd) {
+    background: url('../image/fonga8.jpg') no-repeat center/ cover;
+}
+
+// 
+
+// 
+.btn-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    background-color: transparent;
+
+    &:hover {
+        background-color: yellowgreen;
+    }
+
+    .md-block( {
+            right: 10px;
+        }
+
+    );
+
+    .sm-block( {
+            right: 10px;
+        }
+
+    );
+}
+
+// 
+
+
+// 
+.fixed_top {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    // display: flex;
+    // margin: 205px 0 0 111px;
+    width: 100%;
+    z-index: 105;
+
+    .xxl-block( {
+            position: absolute;
+            margin-top: 28px;
+        }
+
+    );
+}
